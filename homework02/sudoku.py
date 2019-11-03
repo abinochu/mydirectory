@@ -103,7 +103,7 @@ def find_possible_values(grid: List[List[str]], pos: Tuple[int, int]) -> Set[str
     True
     """
     values = set('123456789')
-    values -= set(get_row(grid, pos))=
+    values -= set(get_row(grid, pos))
     values -= set(get_col(grid, pos))
     values -= set(get_block(grid, pos))
     return values
