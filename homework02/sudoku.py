@@ -138,7 +138,7 @@ def solve(grid: List[List[str]]) -> Optional[List[List[str]]]:
 def check_solution(solution: List[List[str]]) -> bool:
     """ Если решение solution верно, то вернуть True, в противном случае False """
     # TODO: Add doctests with bad puzzles
-for row in range(len(solution)):
+	for row in range(len(solution)):
         row_values = set(get_row(solution, (row, 0)))
         if row_values != set('123456789'):
             return False
