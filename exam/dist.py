@@ -39,7 +39,7 @@ def print_maze(maze: Maze, pos):
 def shortest_dist(maze: Maze, pos):
     
     for r in range(1, len(maze)):
-        for c in range(1, len(maze[0])):
+        for c in range(r + 1, len(maze[0])):
             for i in range(len(pos)):
                 if maze[pos[i] + 1] == 'o':
                     pos[i] == pos[i] + 1
