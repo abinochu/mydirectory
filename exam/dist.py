@@ -51,7 +51,7 @@ def shortest_dist(maze: Maze, pos):
                         print ('Вы погибли')
     return maze
 
-output = shortest_dist(maze, pos = [0,0])
+output = shortest_dist(maze, pos)
 for i in range(len(output)): 
     print(output[i])
 
